@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+/* 
+    Nome: CSS "BASE" do site Responsivo (aula 05)
+    Data: 2015-09-16
+    Descrição: Versão final
+    Versão: 0.7
+    Autor: Larissa Rabello
+
+*/
+
+body {
+    color: #000000; /* cor do texto */
+    background-color: #fff;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    color: #54a792;
+    font-size: 3em;
+    font-weight: normal;
+    /* top, right, bottom, left */
+    margin: 0 0 .5em 0.5em;
+}
+
+h2 { font-size: 1.2em; margin: 0 0 1em 0; color: #54a792;}
+h3 { font-family: 'Amatic SC', cursive; font-size: 1.5em; margin: 0 0 .3em 0; color: #54a792;}
+
+p { 
+    margin: 0 0 .75em 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pagina {
+    max-width: 980px;
+    /* top, right, bottom, left */
+    margin: 0 auto 0 auto;
+    /* position: relative; */
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Ajustes de formatação dos destaques */
+
+.destaque {
+    margin-bottom: 25px;
+    width: 33%;
+    height: 30%;
+    float: left;
+    background-color: rgba(22, 167, 145, 0.07);
+}
+.destaque-servicos {
+    margin: 20px auto;
+    width: 100%;
+}
+
+
+/* Detalhes dos títulos e textos */
+
+.destaque h2 {
+    font-family: 'Amatic SC', sans-serif;
+    color: #16a791;
+    font-weight: 100;
+    margin: 0;
+}
+.destaque p {
+    text-align: center;
+    margin: 15px 20px;
+    font-family: 'Lato', sans-serif;
+    color: #555;
+    line-height: 1.2em;
+    font-size: .9em;
+}
+
+.destaque a {
+    margin-bottom: 8%;
+    text-align: center;
+}
+.destaque input {
+    display:list-item;
+    margin-bottom: 5px;
+}
+
+/* Cadastro */
+
+.cadastro {
+    text-align: center;
+    padding: 25px;
+}
+
+/* Área Social do Site - Pág. Gatos */
+
+.social {
+    float: left;
+    padding-left: 10%;
+}
+
+/* Botão cadastrar - Verificar se precisa ser classe */
+
+.btn {
+    float:right;
+    top:40px;
+    right: 50%;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 42px;
+    background-image: url(../imagens/botao-ossinho.png); 
+    /* defini a position absolute, então quero que o logo esteja dentro dos parametros abaixo */
+    /*top: 90px;
+    right: 45%; */
+}
+.btn:hover {
+    background-position: center -79.65px;
+}
+
+/* Botão AGENDAR */
+
+.btn-agenda {
+    float:right;
+    top:10px;
+    right: 45%;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 42px;
+    background-image: url(../imagens/botao-agendar.png); 
+    /* defini a position absolute, então quero que o logo esteja dentro dos parametros abaixo */
+    /*top: 90px;
+    right: 45%; */
+}
+.btn-agenda:hover {
+    background-position: center -79.65px;
+}
+
+/* Section de texto em linha */
+
+.texto-linha {
+    clear:both;
+    border-top: 1px solid rgba(173, 172, 172, 0.4);
+    border-bottom: 1px solid rgba(173, 172, 172, 0.4);
+    padding: 5px;
+    text-align: center; 
+}
+
+.texto-linha p {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 1.5em;
+}
+
+
+/* Primeira imagem, abaixo do menu */
+
+.img-animais {
+    width:100%; /* igualei a largura da imagem ao tamanho da "tela" */
+    height: 100%; /* 485px */
+}
+
+/* Galeria de Imagens na Home */
+
+.galeria {
+    display: inline-block;
+    margin:20px 5px;
+}
+.galeria-dogs-cats {
+    padding: 2px;
+    border-bottom: 1px solid rgba(173, 172, 172, 0.4);
+} 
+
+/*  PADRÃO */
+header a.logo {
+    display: block;
+    position: absolute;
+    /* garante que sempre estará alinhado no canto da página */
+    background-position: 0px 0px;
+    /* a tela mudará de tamanho, então tenho que controlar todas as possibilidades */
+    background-repeat: no-repeat;
+    top: 90px;
+    right: 45%;
+}
+
+/* Barra superior */
+
+.barra-superior {
+    top: 0;
+    right: 0;
+    width:100%;
+    height:45px;
+    display: block;
+    position: absolute;
+    background-color:#54a792;
+    text-align: center;
+}
+/* Parágrafo da barra superior */
+
+.barra-superior p {
+    font-family: 'Lato', sans-serif;
+    color:#fff;
+}
+
+/* Estilizando os links de navegação */
+
+nav a {
+    font-family: 'Lato', sans-serif;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .9em;
+}
+nav a:hover { 
+    color: #4e4e4e;
+}
+
+/* Posicionamento e cores do menu */
+
+nav {
+    text-align: center; /*centralização dos links no menu */
+    background-color: #fff; 
+}
+
+/* agora vamos mexer no espaçamento das margens */
+
+nav { 
+    margin: 12px 0px 10px 0px; 
+}
+
+article {
+    padding: 60px 20px 10px 20px;
+    margin-top: 50px; /* pq o título estava embaixo do nav */
+}
+
+footer {
+    clear: both;
+    margin-top: 10%;
+    padding: 5% 5% 10% 5%;
+    background-color: rgba(78, 78, 78, 0.28);
+    border-top: rgba(80, 80, 80, 0.76) solid 1px;
+    text-align: center;
+}
+footer li {
+    display: inline-block;
+}
+
+/* Estilos dos Blocos de Destaque */
+
+.destaque h2 {
+    padding: 20px 20px 10px 40px;
+}
+/* Ajusta o "Hotel para Cães" */
+.servicos-dog {
+    margin: 10px auto;
+}

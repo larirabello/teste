@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/*
+    Nome: CSS "PEQUENO" do site Responsivo
+    Data: 2015-09-16
+    Descrição: Versão final.
+    Versão: 0.2
+    Autor: Larissa Rabello
+*/
+
+
+/* Aqui defino margem para o formulário de cadastro */
+form {
+    margin-bottom: 35px;
+    margin-left:1%;
+
+}
+
+header a.logo {
+    background-image: url(../imagens/logo_sprint_100.png); /* MUDEI NO PEQUENO */
+    height: 100px; /* MUDEI NO PEQUENO */
+    left: 40%; /* MUDEI NO PEQUENO */
+    width: 100px; /* MUDEI */
+}
+header a.logo:hover {
+    background-position: center -141px; /* MUDEI OS PIXELS */
+}
+header {
+    height: 190px;
+}
+
+
+/* Estilizando os links de navegação */
+nav a {
+    display: block;  /* MUDEI */
+    padding: 8px 0; /* MUDEI */
+}
+/* Hover para indicar que o mouse está em cima de um link */
+
+nav a:hover {
+    border-bottom: rgba(173, 172, 172, 0.4) solid 1px; /* MUDEI DE LEFT PRA BOTTOM */
+    border-top: rgba(173, 172, 172, 0.4) solid 1px;  /* MUDEI DE RIGHT PRA TOP */
+
+}
+
+/* Posicionamento e cores do menu */
+
+nav {
+    background-color: #fff;
+    display: block;
+    height: 96px; /* MUDEI */
+    /*position: absolute;  VERIFICAR NECESSIDADE */
+
+}
+
+/* Posicionamento do NAV */
+nav {
+    top:25%;
+    width:350px;
+}
+
+
+/* criei pra controlar o tamanho da fonte do h1 */
+.animais-texto {
+    font-size: 2.1em;
+}
+
+/* Paragrafo Barra superior */
+
+.barra-superior p {
+    display: block;
+    font-size: .6em; /* MUDEI */
+    line-height: 2em; /* Para centralizar o texto, MUDEI */
+    margin: 0 auto;
+
+}
+
+.destaque p {
+    padding: 10px 5px 10px 10px;
+}
+
+/* Ajustes de formatação dos destaques */
+
+.destaque {
+    width: 100%;
+}
+
+
+/* Galeria de Imagens na Home */
+
+.galeria-dogs-cats {
+    border-bottom: 1px solid rgba(173, 172, 172, 0.4);
+    padding: 2px;
+
+}
+
+/* Galeria de Imagens na Home */
+
+.galeria {
+    display: block;
+}
+.galeria-dogs-cats {
+    clear:both;
+}
+
+
+/* Ajusta o "Hotel para Cães" */
+.servicos-dog {
+    height: 520px;
+}
+
+
+/* Tamanho das Imagens na Galeria */
+
+.tam-galeria {
+    width: 70%;margin-left:5%;
+}

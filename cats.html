@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/>
+    <title> Puppy Pet Store </title>
+    <!-- CSS BASE que será usado por todos os diferentes layouts -->
+    <link rel="stylesheet" type="text/css" href="css/responsivo.css"/>
+    <!-- CSS que será usado no layout GRANDE -->
+    <link rel="stylesheet" type="text/css" href="css/responsivo_grande.css"/>
+    <!-- Agora, utilizando o MEDIA-QUERIES no CSS3, vamos carregar os próximos estilos, porém, condicionalmente, com base no tamanho de tela do dispositivo. -->
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:510px) and (max-width:800px)" href="css/responsivo_medio.css"/>
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="css/responsivo_pequeno.css"/>
+    <!-- Ensina os IE antigos (7 e 8) como tratar e exibir as tags do HTML5 -->
+    <!-- [if lt IE 9]
+    <script><src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    [endif] -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="pagina">
+    <div class="barra-superior">
+        <p>Lorem Ipsun dolor sit amet, XXX.</p>
+        <p><b> (11) 2345-6789</b></p>
+    </div>
+    <header>
+        <a class="logo" href="index.html"></a>
+    </header>
+    <article>
+        <img class="img-animais" alt="Gatos Filhotes" src="imagens/moldura-6.jpg"/>
+        <h1 class="animais-texto"> Tudo para o bem-estar de seu gatinho!</h1>
+        <p>Lorem ipsum dolor sit amet, usu eu consequat prodesset, et pri accusam adipisci. Ea purto labores vel, ex dico movet has. No eum nominavi deleniti ullamcorper, nam no omnis iriure maiorum.</p>
+        <section>
+        <h3> Produtos em Destaque</h3>
+        <ul>
+            <li class="galeria galeria-dogs-cats">
+                <h2 id="acessorios">ACESSÓRIOS</h2>
+                <a href="#"><img  class="tam-galeria" alt="Acessórios" src="imagens/galeria-cats3.jpg"/></a>
+                <p>Coleira para Gatos - Tamanho filhote</p></li>
+            <li class="galeria galeria-dogs-cats">
+                <a href="#"><img  class="tam-galeria" alt="Acessórios" src="imagens/galeria-cats4.jpg"/></a>
+                <p>Bebedouro elétrico para Gatos</p></li>
+            <li class="galeria galeria-dogs-cats">
+                <h2 id="petiscos">PETISCOS</h2>
+                <a href="#"><img class="tam-galeria" alt="Petiscos" src="imagens/galeria-cats1.jpg"/></a>
+                <p> Petisco Antiodor</p></li>
+            <li class="galeria galeria-dogs-cats">
+                <a href="#"><img class="tam-galeria" alt="Petiscos" src="imagens/galeria-cats2.jpg"></a>
+                <p> Petisco Festa - Mix de Sabores </p></li>
+            <li class="galeria galeria-dogs-cats">
+                <h2 id="ambiente">AMBIENTE</h2>
+                <a href="#"><img class="tam-galeria" alt="Ambiente" src="imagens/galeria-cats5.png"/></a>
+                <p>Arranhador</p></li>
+            <li class="galeria galeria-dogs-cats">
+                <a href="#"><img class="tam-galeria" alt="Ambiente" src="imagens/galeria-cats6.jpg"/></a>
+                <p>Casa para filhotes - Pink Kitten</p></li>
+        </ul>
+        </section>
+    </article>
+    <section class="destaque destaque-servicos">
+            <h2>Agendamento de Banho e Tosa</h2>
+            <p>Lorem ipsum dolor sit amet, usu eu consequat prodesset, et pri accusam adipisci. </p>
+            <form>
+                <h3> Nome</h3>
+                <input type="text" name="Nome" size="30" value=" Insira seu nome">
+                <h3> Telefone </h3>
+                <input type="text" name="Telefone" size="20" value=" Insira seu telefone">
+                <a class="btn-agenda" href="#"></a>
+            </form>
+        </section>
+    <section class="texto-linha">
+        <img  alt="Marcas" src="imagens/marcas3.jpg"/>
+        <img  alt="Marcas" src="imagens/marcas5.jpg"/>
+        <img  alt="Marcas" src="imagens/marcas6.jpg"/>
+    </section>
+    <section class="redes-sociais">
+        <a href="#"><img class="social" alt="Cliente X" src="imagens/user1.png"/></a>
+        <!--<h3>Seja um amigo da PUPPY PET STORE e comente sua experiência nas Redes Sociais!</h3> -->
+        <h5>Cliente X: </h5>
+        <p>"Ne quas delenit nam, legendos principes ei est." </p>
+        <a href="#"><img class="social" alt="Cliente Y" src="imagens/user2.png"/></a>
+        <h5>Cliente Y: </h5>
+        <p>"Mea porro dicam putent et, homero possit malorum ad est. Pri diam primis eu." </p>
+        <a href="#"><img class="social" alt="Cliente Z" src="imagens/user3.jpg"/></a>
+        <h5>Cliente Z: </h5>
+        <p>"Et vis ubique latine efficiendi, tritani dissentias dissentiunt mea eu, nulla decore doming est cu."  </p>
+        <h3 class="texto-linha" >Comente a experiência sua e de seu filhote na PUPPY PET STORE!</h3>
+    </section>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dogs.html">Cães</a>
+        <a href="cats.html">Gatos</a>
+    </nav>
+    <footer>
+        <p><small>Est quis constituto in, pri ne lobortis repudiandae. Suas ludus corrumpit sit at, vidit accumsan qui ex. Eos ex molestie recteque.</small></p>
+        <p><small>Desenvolvimento <b>Larissa Rabello</b></small></p>
+        <ul>
+            <li><a href="#"><img alt="Mídias Sociais - Facebook" src="imagens/facebook42.png"/></a></li>
+            <li><a href="#"><img alt="Mídias Sociais - Instagram" src="imagens/instagram42.png"/></a></li>
+            <li><a href="#"><img alt="Mídias Sociais - Twitter" src="imagens/twitter42.png"/></a></li>
+            <li><a href="#"><img alt="Mídias Sociais - YouTube" src="imagens/youtube42.png"/></a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><img alt="Formas de Pagamento - Visa" src="imagens/visa_100.png"/></a></li>
+            <li><a href="#"><img alt="Formas de Pagamento - Mastercard" src="imagens/mastercard_100.png"/></a></li>
+        </ul>
+    </footer>
+    </div>
+    </body>
+</html>

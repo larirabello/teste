@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/*
+    Nome: CSS "GRANDE" do site Responsivo
+    Data: 2015-09-16
+    Descrição: Versão final.
+    Versão: 0.7
+    Autor: Larissa Rabello
+*/
+
+
+/* Aqui defino margem para o formulário de cadastro */
+
+form {
+    margin-left:180px;
+}
+
+/* HEADER TELA GRANDE */
+
+header a.logo {
+    background-image: url(../imagens/logo_sprint_200.png);
+    height: 200px;
+    width: 200px;
+}
+
+header a.logo:hover {
+    background-position: center -282px;
+}
+
+header {
+    /* a altura não foi controlada, apenas a largura. Então o height abaixo é ao acaso */
+    height: 225px;
+}
+
+/* Estilizando os links de navegação */
+
+nav a {
+    display: inline-block;
+    padding: 35px 100px;
+}
+
+/* Hover para indicar que o mouse está em cima de um link */
+
+nav a:hover {
+    border-left: rgba(173, 172, 172, 0.4) solid 1px;
+    border-right: rgba(173, 172, 172, 0.4) solid 1px;
+}
+
+/*  Posicionamento e cores do menu */
+
+nav {
+    border-top: rgba(173, 172, 172, 0.4) solid 1px;
+    border-bottom: rgba(173, 172, 172, 0.4) solid 1px;
+    display: block;
+    height: 87px;
+    margin-right: 0;
+    position: absolute;
+    width: 100%;
+}
+
+/* Agora posicionaremos o NAV */
+
+nav {
+    top:234px;
+    width:980px; /*para completar o tamanho do menu */
+    }
+
+
+/* Parágrafo da barra superior */
+
+.barra-superior p {
+    display: inline;
+    font-size: .9em;
+    line-height: 3em; /* Para centralizar o texto */
+    margin: 0px 300px 10px 245px;
+    margin-top:100px;
+
+}
+
+/* Estilos dos Blocos de Destaque */
+
+.destaque h2 {
+    font-size: 2em;
+}
+.destaque p {
+    padding: 0px 5px 10px 10px;
+}
+
+/* Ajusta o "Hotel para Cães" */
+
+.servicos-dog {
+    height: 350px;
+    width: 50%;
+}
